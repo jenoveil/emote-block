@@ -10,7 +10,7 @@ module.exports = function emoteBlock(dispatch) {
   });
 
   dispatch.hook(S_SOCIAL, 1, (event) => {
-    return false;
+    if (enabled) return false;
   });
 
 }
